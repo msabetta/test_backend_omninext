@@ -250,7 +250,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/manageusers/dev/1669979624079-2022-12-02T11:13:44.079Z/manageusers.zip"
+                "S3Key": "serverless/manageusers/dev/1670138190461-2022-12-04T07:16:30.461Z/manageusers.zip"
               },
               "Handler": "s_api.handler",
               "Runtime": "python3.8",
@@ -273,14 +273,14 @@
               "ApiLogGroup"
             ]
           },
-          "ApiLambdaVersionkftrnLHIIoIyq3Z2m90iSyUpbZL0doawl1eUdqd0": {
+          "ApiLambdaVersionbUO6IKfsgYbssQ9jgOn5BGfEAq5htPJtWe03BfKg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "P8RmiwaGSc49jv0BhvF0oY0C+ghDUz4svh1nv0522KY="
+              "CodeSha256": "kNcfCK9XIjKpWgIe1iITU0UJXDIm2gHwr88DmcKRck4="
             }
           },
           "HttpApi": {
@@ -457,7 +457,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersionkftrnLHIIoIyq3Z2m90iSyUpbZL0doawl1eUdqd0"
+              "Ref": "ApiLambdaVersionbUO6IKfsgYbssQ9jgOn5BGfEAq5htPJtWe03BfKg"
             },
             "Export": {
               "Name": "sls-manageusers-dev-ApiLambdaFunctionQualifiedArn"
@@ -592,11 +592,20 @@
       "tableName": "users-table-dev",
       "wsgi": {
         "app": "app.app"
+      },
+      "dynamodb": {
+        "start": {
+          "migrate": true
+        },
+        "stages": [
+          "dev"
+        ]
       }
     },
     "plugins": [
       "serverless-wsgi",
-      "serverless-python-requirements"
+      "serverless-python-requirements",
+      "serverless-dynamodb-local"
     ],
     "pluginsData": {},
     "functions": {
@@ -614,7 +623,7 @@
         "timeout": 6,
         "runtime": "python3.8",
         "vpc": {},
-        "versionLogicalId": "ApiLambdaVersionkftrnLHIIoIyq3Z2m90iSyUpbZL0doawl1eUdqd0"
+        "versionLogicalId": "ApiLambdaVersionbUO6IKfsgYbssQ9jgOn5BGfEAq5htPJtWe03BfKg"
       }
     },
     "resources": {
@@ -647,8 +656,10 @@
     "configValidationMode": "warn",
     "serviceFilename": "serverless.yml",
     "initialServerlessConfig": {
+      "org": "msabetta89",
+      "app": "manageusers",
       "service": "manageusers",
-      "frameworkVersion": "3",
+      "frameworkVersion": "3.25.1",
       "custom": {
         "$ref": "$[\"service\"][\"custom\"]"
       },
@@ -663,9 +674,7 @@
       },
       "resources": {
         "$ref": "$[\"service\"][\"resources\"]"
-      },
-      "org": "msabetta89",
-      "app": "manageusers"
+      }
     },
     "app": "manageusers",
     "org": "msabetta89",
@@ -674,10 +683,10 @@
     "isDashboardAppPreconfigured": true,
     "orgUid": "b7e04fc0-6661-45d9-a14e-2e213bf03a82",
     "appUid": "jYcWYSlbFYL2WrYQsb",
-    "artifact": "C:\\Users\\mario\\Desktop\\test_backend_omninext\\manageusers\\.serverless\\manageusers.zip"
+    "artifact": "C:\\Users\\mario\\Desktop\\omninext\\test_backend_omninext\\manageusers\\.serverless\\manageusers.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/manageusers/dev/1669979624079-2022-12-02T11:13:44.079Z",
+    "artifactDirectoryName": "serverless/manageusers/dev/1670138190461-2022-12-04T07:16:30.461Z",
     "artifact": "manageusers.zip"
   }
 }

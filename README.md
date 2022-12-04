@@ -11,3 +11,9 @@ $ serverless wsgi serve <br />
 <br />
 references errors: <br />
 - https://stackoverflow.com/questions/67090756/serverless-command-wsgi-serve-not-found <br />
+<br />
+other references:<br />
+- https://github.com/aws-samples/aws-serverless-workshops <br />
+- https://github.com/aws-samples/aws-dynamodb-examples/tree/master/DynamoDB-SDK-Examples/python <br />
+- https://github.com/aws-samples/aws-serverless-workshops/tree/master/WebApplication <br />
+<br />
