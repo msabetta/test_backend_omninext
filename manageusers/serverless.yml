@@ -4,7 +4,7 @@ service: manageusers
 
 #frameworkVersion: '3'
 #https://github.com/serverless/serverless/issues/7631
-frameworkVersion: '1.68.0'
+frameworkVersion: '3.25.1'
 
 custom:
   tableName: 'users-table-${self:provider.stage}'
