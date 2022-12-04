@@ -16,4 +16,6 @@ other references:<br />
 - https://github.com/aws-samples/aws-serverless-workshops <br />
 - https://github.com/aws-samples/aws-dynamodb-examples/tree/master/DynamoDB-SDK-Examples/python <br />
 - https://github.com/aws-samples/aws-serverless-workshops/tree/master/WebApplication <br />
+- https://docs.github.com/en/repositories/working-with-files/managing-large-files/resolving-git-large-file-storage-upload-failures <br />
+<br />
 <br />
