@@ -109,7 +109,6 @@ Thanks to capabilities of `serverless-wsgi`, it is also possible to run your app
 
 ```bash
 pip install werkzeug boto3
-pip install -r requirements.txt
 ```
 
 Additionally, you will need to emulate DynamoDB locally, which can be done by using `serverless-dynamodb-local` plugin. In order to do that, execute the following commands:
