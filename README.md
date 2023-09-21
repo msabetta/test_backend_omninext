@@ -1,7 +1,7 @@
 # test_backend_omninext
 - Instructions: <br />
 $ git clone https://github.com/msabetta/test_backend_omninext <br />
-$ cd manageusers <br />
+$ cd test_backend_omninext/manageusers <br />
 $ pip3 install -r requirements.txt <br />
 $ serverless dynamodb start <br />
 - leave the first terminal opened with DynamoDB instance in running <br />
