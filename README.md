@@ -24,3 +24,4 @@ installation requirements by environment: <br />
 $ sudo apt-get install python3-pip <br />
 $ sudo apt-get install npm <br />
 $ sudo npm install -g serverless <br />
+$ sudo apt install openjdk-19-jre-headless <br />
