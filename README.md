@@ -25,3 +25,7 @@ $ sudo apt-get install python3-pip <br />
 $ sudo apt-get install npm <br />
 $ sudo npm install -g serverless <br />
 $ sudo apt install openjdk-19-jre-headless <br />
+$ sudo apt update <br />
+$ sudo apt install software-properties-common <br />
+$ sudo add-apt-repository ppa:deadsnakes/ppa <br />
+$ sudo apt install python3.8 <br />
