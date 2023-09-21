@@ -19,3 +19,7 @@ other references:<br />
 - https://docs.github.com/en/repositories/working-with-files/managing-large-files/resolving-git-large-file-storage-upload-failures <br />
 <br />
 <br />
+
+installation requirements by environment <br />
+sudo apt-get install python3-pip <br />
+
